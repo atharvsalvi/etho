@@ -1,3 +1,4 @@
+from gemini import generate
 
 print("Hello, this is your bot Etho.")
 print("May I know your name?")
