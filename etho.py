@@ -7,4 +7,5 @@ while(session) :
     if(userInput == "exit"): break
     texts = generate(userInput).split('\n')
     for text in texts :
+        # print(text)
         os.system(text)
