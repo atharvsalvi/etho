@@ -12,7 +12,7 @@ def generate():
     )
     response = client.models.generate_content(
         model = "gemini-2.5-flash",
-        contents="commit to git with message add and commit from the code itself",
+        contents=" add and commit to git with message add and commit from the code itself",
         config=types.GenerateContentConfig(
             system_instruction = "Give the response in the form of powershell commands only. Do not add any additional content or markdown."
         ),
