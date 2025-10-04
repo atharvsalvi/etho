@@ -14,7 +14,7 @@ def generate(userInput):
         model = "gemini-2.5-flash",
         contents=f"{userInput}",
         config=types.GenerateContentConfig(
-            system_instruction = "Give the response in the form of windows commands only. Do not add any additional content or markdown."
+            system_instruction = "Give the response in the form of windows commands only. Inform the user the changes made. Do not add any additional content or markdown."
         ),
     )
     return response.text
